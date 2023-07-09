@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+cd /autograder/source
+
+# Prepare submission
+cp -a -n /autograder/submission/. /autograder/source/
+
+# changes this depending on the assignment!
+PROD=True python3.11 tester.py 1
